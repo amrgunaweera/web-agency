@@ -6,7 +6,7 @@ import { projects } from '../data/projects'
 
 export function Home() {
   return (
-    <PageLayout title="Home" description="TechNova is a premier technology agency building scalable web and mobile solutions.">
+    <PageLayout title="Home" description="iTechNova is a premier technology agency building scalable web and mobile solutions.">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white -z-10" />

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://technova.agency/</loc>
+    <loc>https://itechnova.agency/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://technova.agency/services</loc>
+    <loc>https://itechnova.agency/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://technova.agency/work</loc>
+    <loc>https://itechnova.agency/work</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://technova.agency/technologies</loc>
+    <loc>https://itechnova.agency/technologies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://technova.agency/about</loc>
+    <loc>https://itechnova.agency/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://technova.agency/contact</loc>
+    <loc>https://itechnova.agency/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

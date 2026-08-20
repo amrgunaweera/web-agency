@@ -39,7 +39,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email Us</h3>
-                    <p className="text-gray-600">hello@technova.agency</p>
+                    <p className="text-gray-600">hello@itechnova.agency</p>
                   </div>
                 </div>
                 

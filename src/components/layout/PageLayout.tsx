@@ -9,13 +9,13 @@ interface PageLayoutProps {
 }
 
 export function PageLayout({ children, title, description }: PageLayoutProps) {
-  const defaultTitle = 'TechNova | Modern Technology Agency'
+  const defaultTitle = 'iTechNova | Modern Technology Agency'
   const defaultDescription = 'We build scalable, high-performance web applications and digital solutions.'
 
   return (
     <>
       <Helmet>
-        <title>{title ? `${title} | TechNova` : defaultTitle}</title>
+        <title>{title ? `${title} | iTechNova` : defaultTitle}</title>
         <meta name="description" content={description || defaultDescription} />
       </Helmet>
       <motion.div

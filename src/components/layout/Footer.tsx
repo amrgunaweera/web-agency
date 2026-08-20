@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <Code2 className="w-8 h-8 text-blue-500" />
-              <span className="font-bold text-xl tracking-tight text-white">TechNova</span>
+              <span className="font-bold text-xl tracking-tight text-white">iTechNova</span>
             </Link>
             <p className="text-sm text-gray-400 mb-6">
               Building scalable, high-performance digital solutions for modern businesses.
@@ -47,7 +47,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:hello@technova.agency" className="hover:text-white transition-colors">hello@technova.agency</a>
+                <a href="mailto:hello@itechnova.agency" className="hover:text-white transition-colors">hello@itechnova.agency</a>
               </li>
               <li>123 Innovation Drive<br/>Tech City, TC 90210</li>
             </ul>
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center text-gray-500">
-          © {new Date().getFullYear()} TechNova Agency. All rights reserved.
+          © {new Date().getFullYear()} iTechNova Agency. All rights reserved.
         </div>
       </div>
     </footer>

@@ -33,7 +33,7 @@ export function Navbar() {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             <Code2 className="w-8 h-8 text-blue-600" />
-            <span className="font-bold text-xl tracking-tight text-gray-900">TechNova</span>
+            <span className="font-bold text-xl tracking-tight text-gray-900">iTechNova</span>
           </Link>
           
           {/* Desktop Nav */}
