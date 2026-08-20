@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "itechnova",
     "public": "dist",
     "ignore": [
       "firebase.json",
