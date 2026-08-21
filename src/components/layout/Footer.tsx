@@ -9,7 +9,7 @@ export function Footer() {
           
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="iTechNova" className="h-10 w-auto object-contain bg-white rounded p-1" />
+              <img src="/favicon.svg" alt="iTechNova" className="h-10 w-auto object-contain bg-white rounded p-1" />
             </Link>
             <p className="text-sm text-gray-400 mb-6">
               Building scalable, high-performance digital solutions for modern businesses.
