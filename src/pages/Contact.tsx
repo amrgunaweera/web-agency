@@ -1,5 +1,5 @@
 import { PageLayout } from '../components/layout/PageLayout'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { IconMail, IconPhone, IconMapPin } from '@tabler/icons-react'
 import { useForm } from 'react-hook-form'
 
 interface ContactForm {
@@ -35,7 +35,7 @@ export function Contact() {
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-blue-600" />
+                    <IconMail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email Us</h3>
@@ -45,7 +45,7 @@ export function Contact() {
                 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                    <IconPhone className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Call Us</h3>
@@ -55,7 +55,7 @@ export function Contact() {
                 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-blue-600" />
+                    <IconMapPin className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Visit Us</h3>

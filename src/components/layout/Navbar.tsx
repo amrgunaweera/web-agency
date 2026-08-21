@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Code2 } from 'lucide-react'
+import { IconMenu2, IconX } from '@tabler/icons-react'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -32,25 +32,23 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
-            <Code2 className="w-8 h-8 text-blue-600" />
-            <span className="font-bold text-xl tracking-tight text-gray-900">iTechNova</span>
+            <img src="/logo.svg" alt="iTechNova" className="h-14 md:h-16 w-auto object-contain" />
           </Link>
-          
+
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  location.pathname === link.path ? 'text-blue-600' : 'text-gray-600'
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${location.pathname === link.path ? 'text-blue-600' : 'text-gray-600'
+                  }`}
               >
                 {link.name}
               </Link>
             ))}
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
             >
               Get in Touch
@@ -58,11 +56,11 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2 text-gray-600 hover:text-gray-900"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <IconX className="w-6 h-6" /> : <IconMenu2 className="w-6 h-6" />}
           </button>
         </div>
       </div>
@@ -71,18 +69,17 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-4 flex flex-col space-y-4">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
+            <Link
+              key={link.name}
               to={link.path}
-              className={`text-base font-medium px-4 py-2 rounded-md ${
-                location.pathname === link.path ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:bg-gray-50'
-              }`}
+              className={`text-base font-medium px-4 py-2 rounded-md ${location.pathname === link.path ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:bg-gray-50'
+                }`}
             >
               {link.name}
             </Link>
           ))}
-          <Link 
-            to="/contact" 
+          <Link
+            to="/contact"
             className="mt-4 mx-4 px-4 py-3 bg-blue-600 text-white text-center font-medium rounded-lg hover:bg-blue-700"
           >
             Get in Touch
