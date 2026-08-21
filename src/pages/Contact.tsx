@@ -12,11 +12,26 @@ export function Contact() {
   const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ContactForm>()
 
   const onSubmit = async (data: ContactForm) => {
-    // Placeholder for actual submission
-    console.log('Form data:', data)
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    alert('Message sent successfully!')
-    reset()
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/info@itechnova.web.app", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      if (response.ok) {
+        alert('Message sent successfully!');
+        reset();
+      } else {
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred while sending the message.');
+    }
   }
 
   return (
