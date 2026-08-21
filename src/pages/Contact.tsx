@@ -13,7 +13,7 @@ export function Contact() {
 
   const onSubmit = async (data: ContactForm) => {
     try {
-      const response = await fetch("https://formsubmit.co/ajax/info@itechnova.web.app", {
+      const response = await fetch("https://formsubmit.co/ajax/amrgprojects@gmail.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
