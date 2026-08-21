@@ -28,7 +28,7 @@ export function Navbar() {
   }, [location])
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/80 backdrop-blur-xl border-b border-slate-900/5 py-3 shadow-sm' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
@@ -41,15 +41,17 @@ export function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${location.pathname === link.path ? 'text-blue-600' : 'text-gray-600'
-                  }`}
+                className={`text-sm font-medium transition-colors duration-300 ${location.pathname === link.path
+                  ? 'text-primary'
+                  : 'text-slate-500 hover:text-slate-900'
+                }`}
               >
                 {link.name}
               </Link>
             ))}
             <Link
               to="/contact"
-              className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+              className="btn-gradient px-5 py-2.5 text-sm"
             >
               Get in Touch
             </Link>
@@ -57,7 +59,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-600 hover:text-gray-900"
+            className="md:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <IconX className="w-6 h-6" /> : <IconMenu2 className="w-6 h-6" />}
@@ -67,20 +69,22 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-4 flex flex-col space-y-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-900/5 shadow-lg py-4 px-4 flex flex-col space-y-2">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
-              className={`text-base font-medium px-4 py-2 rounded-md ${location.pathname === link.path ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:bg-gray-50'
-                }`}
+              className={`text-base font-medium px-4 py-3 rounded-lg transition-colors ${location.pathname === link.path
+                ? 'bg-primary/5 text-primary'
+                : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
+              }`}
             >
               {link.name}
             </Link>
           ))}
           <Link
             to="/contact"
-            className="mt-4 mx-4 px-4 py-3 bg-blue-600 text-white text-center font-medium rounded-lg hover:bg-blue-700"
+            className="mt-4 mx-4 btn-gradient px-4 py-3 text-center text-sm"
           >
             Get in Touch
           </Link>
