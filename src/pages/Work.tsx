@@ -1,6 +1,6 @@
 import { PageLayout } from '../components/layout/PageLayout'
 import { projects } from '../data/projects'
-import { ArrowUpRight } from 'lucide-react'
+import { IconArrowUpRight } from '@tabler/icons-react'
 
 export function Work() {
   return (
@@ -39,7 +39,7 @@ export function Work() {
                   
                   <div className="pt-6">
                     <a href={project.link} className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
-                      View Case Study <ArrowUpRight className="w-4 h-4" />
+                      View Case Study <IconArrowUpRight className="w-4 h-4" />
                     </a>
                   </div>
                 </div>

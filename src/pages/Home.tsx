@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react'
+import { IconArrowRight } from '@tabler/icons-react'
 import { Link } from 'react-router-dom'
 import { PageLayout } from '../components/layout/PageLayout'
 import { services } from '../data/services'
@@ -22,7 +22,7 @@ export function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contact" className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-              Start a Project <ArrowRight className="w-5 h-5" />
+              Start a Project <IconArrowRight className="w-5 h-5" />
             </Link>
             <Link to="/work" className="px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition-all shadow-sm flex items-center justify-center gap-2">
               View Our Work
@@ -45,14 +45,14 @@ export function Home() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <Link to="/services" className="text-blue-600 font-medium hover:text-blue-800 flex items-center gap-1">
-                  Learn more <ArrowRight className="w-4 h-4" />
+                  Learn more <IconArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
             <Link to="/services" className="inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-blue-600 transition-colors">
-              View all services <ArrowRight className="w-5 h-5" />
+              View all services <IconArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
@@ -81,7 +81,7 @@ export function Home() {
           </div>
           <div className="text-center mt-12">
             <Link to="/work" className="inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-blue-600 transition-colors">
-              View full portfolio <ArrowRight className="w-5 h-5" />
+              View full portfolio <IconArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>

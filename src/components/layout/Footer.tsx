@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom'
-import { Code2, Globe, MessageCircle, Briefcase, Mail } from 'lucide-react'
+import { IconWorld, IconMessageCircle, IconBriefcase, IconMail } from '@tabler/icons-react'
 
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          
+
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="iTechNova" className="h-10 w-auto object-contain bg-white rounded p-1" />
+              <img src="/logo white.png" alt="iTechNova" className="h-12 md:h-14 w-auto object-contain" />
             </Link>
             <p className="text-sm text-gray-400 mb-6">
               Building scalable, high-performance digital solutions for modern businesses.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors"><MessageCircle className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors"><Globe className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors"><Briefcase className="w-5 h-5" /></a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors"><IconMessageCircle className="w-5 h-5" /></a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors"><IconWorld className="w-5 h-5" /></a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors"><IconBriefcase className="w-5 h-5" /></a>
             </div>
           </div>
 
@@ -45,15 +45,15 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
+                <IconMail className="w-4 h-4" />
                 <a href="mailto:hello@itechnova.agency" className="hover:text-white transition-colors">hello@itechnova.agency</a>
               </li>
-              <li>123 Innovation Drive<br/>Tech City, TC 90210</li>
+              <li>123 Innovation Drive<br />Tech City, TC 90210</li>
             </ul>
           </div>
 
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center text-gray-500">
           © {new Date().getFullYear()} iTechNova Agency. All rights reserved.
         </div>

@@ -1,7 +1,7 @@
 import { PageLayout } from '../components/layout/PageLayout'
 import { services } from '../data/services'
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import { IconArrowRight } from '@tabler/icons-react'
 
 export function Services() {
   return (
@@ -21,7 +21,7 @@ export function Services() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
                 <Link to="/contact" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors">
-                  Discuss this service <ArrowRight className="w-5 h-5" />
+                  Discuss this service <IconArrowRight className="w-5 h-5" />
                 </Link>
               </div>
             ))}
